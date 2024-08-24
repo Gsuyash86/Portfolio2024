@@ -1,0 +1,65 @@
+/* components/Projects.module.css */
+.projects {
+    background-color: #2e2e2e;
+    border-radius: 12px;
+    padding: 2rem;
+    margin: 2rem 0;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    animation: fadeIn 1s ease-in-out;
+  }
+  
+  .heading {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    color: #e0e0e0;
+    text-align: center;
+  }
+  
+  .projectCard {
+    background-color: #3a3a3a;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .projectCard:hover {
+    transform: scale(1.02);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+  }
+  
+  .projectImage {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    transition: opacity 0.3s ease;
+  }
+  
+  .projectCard:hover .projectImage {
+    opacity: 0.8;
+  }
+  
+  .projectContent {
+    padding: 1rem;
+  }
+  
+  .title {
+    font-size: 1.5rem;
+    color: #f0f0f0;
+    margin: 0 0 0.5rem 0;
+  }
+  
+  .description {
+    font-size: 1rem;
+    color: #e0e0e0;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }

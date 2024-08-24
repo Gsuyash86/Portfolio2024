@@ -1,21 +1,36 @@
 /* components/ResumeDownload.module.css */
 .resumeDownload {
-    text-align: center;
-    margin: 2rem 0;
+  text-align: center;
+  margin: 2rem 0;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.downloadLink {
+  color: #ffffff;
+  font-size: 1.2rem;
+  text-decoration: none;
+  padding: 0.75rem 1.5rem;
+  border: 2px solid #1e90ff;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #1e90ff, #00bfff);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  transition: background 0.3s ease, color 0.3s ease, border-color 0.3s ease, transform 0.3s ease;
+  display: inline-block;
+}
+
+.downloadLink:hover {
+  background: #ffffff;
+  color: #1e90ff;
+  border-color: #1e90ff;
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
   }
-  
-  .downloadLink {
-    color: #1e90ff;
-    font-size: 1.2rem;
-    text-decoration: none;
-    padding: 0.5rem 1rem;
-    border: 2px solid #1e90ff;
-    border-radius: 8px;
-    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+  to {
+    opacity: 1;
   }
-  
-  .downloadLink:hover {
-    background-color: #1e90ff;
-    color: #ffffff;
-    border-color: #1e90ff;
-  }
+}

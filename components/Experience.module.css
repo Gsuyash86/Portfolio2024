@@ -1,0 +1,67 @@
+/* components/Experience.module.css */
+.experience {
+    background-color: #2e2e2e;
+    border-radius: 12px;
+    padding: 2rem;
+    margin: 2rem 0;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    animation: fadeIn 1s ease-in-out;
+  }
+  
+  .heading {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    color: #e0e0e0;
+    text-align: center;
+  }
+  
+  .experienceCard {
+    background-color: #3a3a3a;
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .experienceCard:hover {
+    background-color: #444444;
+    transform: scale(1.02);
+  }
+  
+  .title {
+    font-size: 1.5rem;
+    color: #f0f0f0;
+    margin: 0 0 0.5rem 0;
+  }
+  
+  .company {
+    font-size: 1.2rem;
+    color: #b0b0b0;
+    margin: 0 0 0.5rem 0;
+  }
+  
+  .date {
+    font-size: 1rem;
+    color: #9e9e9e;
+    margin: 0 0 1rem 0;
+  }
+  
+  .responsibilities {
+    list-style-type: disc;
+    padding-left: 1.5rem;
+  }
+  
+  .responsibilityItem {
+    font-size: 1rem;
+    color: #e0e0e0;
+    margin-bottom: 0.5rem;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }

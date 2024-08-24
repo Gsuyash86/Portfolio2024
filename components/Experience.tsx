@@ -1,5 +1,6 @@
 // components/Experience.tsx
 import React from 'react';
+import styles from './Experience.module.css';
 
 const Experience = async () => {
   // Simulating data fetching (replace with actual data fetching logic if needed)
@@ -46,16 +47,16 @@ const Experience = async () => {
   ];
 
   return (
-    <section>
-      <h2>Experience</h2>
-      {data?.map((exp, index) => (
-        <div key={index}>
-          <h3>{exp.title}</h3>
-          <h4>{exp.company}</h4>
-          <p>{exp.date}</p>
-          <ul>
+    <section className={styles.experience}>
+      <h2 className={styles.heading}>Experience</h2>
+      {data.map((exp, index) => (
+        <div key={index} className={styles.experienceCard}>
+          <h3 className={styles.title}>{exp.title}</h3>
+          <h4 className={styles.company}>{exp.company}</h4>
+          <p className={styles.date}>{exp.date}</p>
+          <ul className={styles.responsibilities}>
             {exp.responsibilities.map((resp, idx) => (
-              <li key={idx}>{resp}</li>
+              <li key={idx} className={styles.responsibilityItem}>{resp}</li>
             ))}
           </ul>
         </div>
