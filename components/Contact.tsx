@@ -21,11 +21,11 @@ const Contact = () => {
         </div>
         <div className={styles.contactItem}>
           <h3 className={styles.label}>LinkedIn</h3>
-          <a className={styles.info} href="https://www.linkedin.com/in/suyashgupta" target="_blank" rel="noopener noreferrer">LinkedIn Profile</a>
+          <a className={styles.info} href="https://www.linkedin.com/in/gsuyash1" target="_blank" rel="noopener noreferrer">LinkedIn Profile</a>
         </div>
         <div className={styles.contactItem}>
           <h3 className={styles.label}>GitHub</h3>
-          <a className={styles.info} href="https://github.com/your-github-username" target="_blank" rel="noopener noreferrer">GitHub Profile</a>
+          <a className={styles.info} href="https://github.com/Gsuyash86" target="_blank" rel="noopener noreferrer">GitHub Profile</a>
         </div>
       </div>
     </section>
