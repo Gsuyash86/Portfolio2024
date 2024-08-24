@@ -11,7 +11,7 @@ const Navbar = () => {
         <li><Link href="/experience">Experience</Link></li>
         <li><Link href="/projects">Projects</Link></li>
         <li><Link href="/contact">Contact</Link></li>
-        <li><Link href="/resume" download="Suyash_Gupta_Resume.pdf">Download Resume</Link></li>
+        <li><Link href="/resume" download="Suyash_Gupta_Resume.pdf">Resume</Link></li>
       </ul>
     </nav>
   );

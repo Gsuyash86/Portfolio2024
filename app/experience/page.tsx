@@ -9,7 +9,6 @@ import '../../styles/animations.css';
 const ExperiencePage = async () => {
   return (
     <>
-    <Navbar />
     <main className="main">
       <Experience />
     </main>

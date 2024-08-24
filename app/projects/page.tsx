@@ -11,7 +11,6 @@ const ProjectsPage = async () => {
   return (
     <>
       <NextSeo title="Projects - Suyash Gupta" description="Suyash Gupta's projects showcasing his work in various fields." />
-      <Navbar />
       <main className="main">
         <Projects />
       </main>

@@ -10,7 +10,6 @@ const ContactPage = async () => {
   return (
     <>
       <NextSeo title="Contact - Suyash Gupta" description="Contact Suyash Gupta for further inquiries." />
-      <Navbar />
       <main className="main">
         <Contact />
       </main>

@@ -1,9 +1,10 @@
 import type { Metadata } from "next";
 import React from "react";
 import { Inter } from "next/font/google";
-import "./globals.css";
+import "../styles/globals.css";
 import Copyright from "../components/Copyright";
 import Head from "next/head";
+import Navbar from "../components/Navbar";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -54,6 +55,7 @@ export default function RootLayout({
         <meta name="twitter:description" content="Explore the portfolio of Suyash Gupta, showcasing projects, experience, and contact information." />
         <meta name="twitter:image" content="/images/twitter-image.jpg" />
       </Head>
+      <Navbar />
       <body className={inter.className}>{children}</body>
       <Copyright />
     </html>
