@@ -6,7 +6,6 @@ import styles from './Home.module.css';
 const Home = async () => {
   return (
     <>
-      <Navbar />
       <main className={styles.main}>
         <div className={styles.heroSection}>
           <div className={styles.profileContainer}>
