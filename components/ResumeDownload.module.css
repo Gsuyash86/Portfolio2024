@@ -1,0 +1,21 @@
+/* components/ResumeDownload.module.css */
+.resumeDownload {
+    text-align: center;
+    margin: 2rem 0;
+  }
+  
+  .downloadLink {
+    color: #1e90ff;
+    font-size: 1.2rem;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border: 2px solid #1e90ff;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+  }
+  
+  .downloadLink:hover {
+    background-color: #1e90ff;
+    color: #ffffff;
+    border-color: #1e90ff;
+  }

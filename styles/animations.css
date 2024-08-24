@@ -1,0 +1,40 @@
+/* styles/animations.css */
+.fadeIn {
+    animation: fadeIn 1s ease-in-out;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  .card {
+    background-color: #1f1f1f;
+    border-radius: 8px;
+    padding: 1rem;
+    margin: 1rem 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .card:hover {
+    transform: translateY(-10px);
+  }
+  
+  .resumeDownload {
+    text-align: center;
+  }
+  
+  .downloadLink {
+    color: #1e90ff;
+    font-size: 1.2rem;
+    text-decoration: none;
+  }
+  
+  .downloadLink:hover {
+    text-decoration: underline;
+  }

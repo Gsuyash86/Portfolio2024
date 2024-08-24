@@ -1,0 +1,33 @@
+/* components/Navbar.module.css */
+.navbar {
+    background-color: #1f1f1f;
+    padding: 1rem;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+  }
+  
+  .navList {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .navList li {
+    margin: 0;
+  }
+  
+  .navList a {
+    color: #e0e0e0;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+  }
+  
+  .navList a:hover {
+    color: #1e90ff;
+  }
