@@ -1,60 +1,95 @@
-/* pages/Home.module.css */
+
 .main {
-    background-color: #2e2e2e;
-    color: #e0e0e0;
-    padding: 2rem;
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  background-color: #5f5f5f;
+  color: #e0e0e0;
+  padding: 2rem;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 50px;
+}
+.heroSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  animation: fadeIn 1s ease-in-out;
+  max-width: 1200px;
+  width: 100%;
+  padding: 1rem;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  border-radius: 12px;
+  background-color: #1f1f1f;
+}
+
+.profileContainer {
+  margin-bottom: 2rem;
+}
+
+.profileImage {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.profileImage:hover {
+  transform: scale(1.1);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+}
+
+.textContainer {
+  max-width: 800px;
+  padding: 1rem;
+}
+
+.about {
+  margin-top: 1rem;
+  line-height: 1.6;
+}
+
+.fadeIn {
+  opacity: 0;
+  animation: fadeIn 1s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
   }
-  
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (min-width: 768px) {
   .heroSection {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    animation: fadeIn 1s ease-in-out;
+    flex-direction: row;
+    text-align: left;
   }
-  
+
   .profileContainer {
     margin-right: 2rem;
+    margin-bottom: 0;
   }
-  
-  .profileImage {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    object-fit: cover;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-  }
-  
-  .profileImage:hover {
-    transform: scale(1.05);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
-  }
-  
+
   .textContainer {
-    max-width: 600px;
+    padding: 0;
   }
-  
-  .about {
-    margin-top: 1rem;
+}
+
+@media (max-width: 767px) {
+  .profileContainer {
+    margin-bottom: 1.5rem;
   }
-  
-  .fadeIn {
-    opacity: 0;
-    animation: fadeIn 1s ease-in-out forwards;
+
+  .textContainer {
+    padding: 0 1rem;
   }
-  
-  @keyframes fadeIn {
-    from {
-      opacity: 0;
-      transform: translateY(20px);
-    }
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
+}

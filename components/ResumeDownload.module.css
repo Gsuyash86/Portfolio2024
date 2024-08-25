@@ -1,8 +1,12 @@
 /* components/ResumeDownload.module.css */
 .resumeDownload {
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   margin: 2rem 0;
   animation: fadeIn 1s ease-in-out;
+  padding: 20px;
 }
 
 .downloadLink {
@@ -14,8 +18,9 @@
   border-radius: 12px;
   background: linear-gradient(135deg, #1e90ff, #00bfff);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  position: relative;
+  overflow: hidden;
   transition: background 0.3s ease, color 0.3s ease, border-color 0.3s ease, transform 0.3s ease;
-  display: inline-block;
 }
 
 .downloadLink:hover {
@@ -26,11 +31,43 @@
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
 }
 
+.downloadText {
+  display: inline-block;
+  position: relative;
+  z-index: 1;
+}
+
+.spinner {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  width: 24px;
+  height: 24px;
+  border: 2px solid #ffffff;
+  border-top: 2px solid #1e90ff;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  visibility: hidden;
+}
+
+.downloadLink:active .spinner {
+  visibility: visible;
+}
+
 @keyframes fadeIn {
   from {
     opacity: 0;
   }
   to {
     opacity: 1;
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
   }
 }

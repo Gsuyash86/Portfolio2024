@@ -55,9 +55,11 @@ export default function RootLayout({
         <meta name="twitter:description" content="Explore the portfolio of Suyash Gupta, showcasing projects, experience, and contact information." />
         <meta name="twitter:image" content="/images/twitter-image.jpg" />
       </Head>
-      <Navbar />
-      <body className={inter.className}>{children}</body>
-      <Copyright />
+      <body className={`${inter.className} container`}>
+        <Navbar />
+        {children}
+        <Copyright />
+        </body>
     </html>
   );
 }

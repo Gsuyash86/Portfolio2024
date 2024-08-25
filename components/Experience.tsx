@@ -3,7 +3,6 @@ import React from 'react';
 import styles from './Experience.module.css';
 
 const Experience = async () => {
-  // Simulating data fetching (replace with actual data fetching logic if needed)
   const data = [
     {
       title: 'Senior Software Developer',
@@ -11,7 +10,7 @@ const Experience = async () => {
       date: 'Jan 2023 - Present',
       responsibilities: [
         'Projects: Timesnownews, Zoomtventertainment, Timesfoodie, Gadgettimes, ETNowNews, TimesDrive',
-        'Collaborated with the Glance team, integrating Glance Pages and Mlib to enhance the platform\'s UI/UX using React in Web and AMP pages.',
+        "Collaborated with the Glance team, integrating Glance Pages and Mlib to enhance the platform's UI/UX using React in Web and AMP pages.",
         'Implemented API to store the data for played matches in AWS S3 bucket and Nodejs.',
         'Achieved a 45% increase in user engagement and a 20% boost in customer retention through advanced front-end development, using server-side rendering.',
         'Implemented SEO strategies resulting in a 20% increase in crawl rates, improving search engine visibility and user experience.',
