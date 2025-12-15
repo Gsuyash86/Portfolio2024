@@ -32,7 +32,7 @@ const TiltCard: React.FC<TiltCardProps> = ({
       {/* Inner glow effect on hover */}
       <div className="absolute inset-0 rounded-2xl bg-gradient-to-br from-accent-cyan/0 via-transparent to-accent-blue/0 opacity-0 group-hover:opacity-10 transition-opacity pointer-events-none" />
 
-      <div className="relative z-10">{children}</div>
+      <div className="relative z-10 pointer-events-auto">{children}</div>
     </motion.div>
   );
 };

@@ -54,9 +54,9 @@ export const resumeData: ResumeData = {
     phone: "+91-7017460040",
     email: "guptasuyash9@gmail.com",
     links: {
-      linkedin: "https://linkedin.com/in/suyash-gupta",
-      github: "https://github.com/suyashgupta",
-      leetcode: "https://leetcode.com/suyashgupta"
+      linkedin: "https://www.linkedin.com/in/suyash-gupta-software-developer",
+      github: "https://github.com/Gsuyash86",
+      leetcode: "https://leetcode.com/u/guptasuyash9"
     }
   },
   skills: [

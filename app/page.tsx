@@ -150,7 +150,7 @@ const Home = () => {
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Visit GitHub profile"
-              className="text-gray-400 hover:text-accent-cyan transition-colors"
+              className="text-gray-400 hover:text-accent-cyan transition-colors cursor-pointer relative z-10"
               whileHover={{ scale: 1.2, rotate: 5 }}
               whileTap={{ scale: 0.9 }}
             >
@@ -161,7 +161,7 @@ const Home = () => {
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Visit LinkedIn profile"
-              className="text-gray-400 hover:text-accent-cyan transition-colors"
+              className="text-gray-400 hover:text-accent-cyan transition-colors cursor-pointer relative z-10"
               whileHover={{ scale: 1.2, rotate: 5 }}
               whileTap={{ scale: 0.9 }}
             >
@@ -172,7 +172,7 @@ const Home = () => {
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Visit LeetCode profile"
-              className="text-gray-400 hover:text-accent-cyan transition-colors"
+              className="text-gray-400 hover:text-accent-cyan transition-colors cursor-pointer relative z-10"
               whileHover={{ scale: 1.2, rotate: 5 }}
               whileTap={{ scale: 0.9 }}
             >
@@ -309,7 +309,7 @@ const Home = () => {
                         (e.target as HTMLImageElement).src = '/assests/project1.png';
                       }}
                     />
-                    <div className="absolute inset-0 bg-gradient-to-t from-dark-bg/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
+                    <div className="absolute inset-0 bg-gradient-to-t from-dark-bg/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none" />
                   </div>
                   <h3 className="text-xl font-bold text-white mb-2 group-hover:text-accent-cyan transition-colors">
                     {project.name}
@@ -324,13 +324,13 @@ const Home = () => {
                     ))}
                   </ul>
                   {(project.link || project.github) && (
-                    <div className="flex gap-3 mt-4 pt-4 border-t border-white/10">
+                    <div className="flex gap-3 mt-4 pt-4 border-t border-white/10 relative z-20">
                       {project.link && (
                         <motion.a
                           href={project.link}
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="flex items-center gap-2 text-accent-cyan hover:text-accent-blue text-sm font-semibold transition-colors"
+                          className="flex items-center gap-2 text-accent-cyan hover:text-accent-blue text-sm font-semibold transition-colors relative z-20"
                           whileHover={{ scale: 1.05 }}
                           whileTap={{ scale: 0.95 }}
                         >
@@ -345,7 +345,7 @@ const Home = () => {
                           href={project.github}
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="flex items-center gap-2 text-gray-400 hover:text-accent-cyan text-sm transition-colors"
+                          className="flex items-center gap-2 text-gray-400 hover:text-accent-cyan text-sm transition-colors relative z-20 cursor-pointer"
                           whileHover={{ scale: 1.05 }}
                           whileTap={{ scale: 0.95 }}
                         >
