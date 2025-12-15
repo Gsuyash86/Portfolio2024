@@ -3,19 +3,21 @@ import React from "react";
 import { Inter } from "next/font/google";
 import "../styles/globals.css";
 import Copyright from "../components/Copyright";
-import Head from "next/head";
-import Navbar from "../components/Navbar";
+import ScrollProgress from "../components/ScrollProgress";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Suyash Gupta - Portfolio",
-  description: "Explore the portfolio of Suyash Gupta, a software engineer with expertise in React, Next.js, and more.",
-  keywords: "Suyash Gupta, software engineer, React developer, Next.js developer, portfolio",
+  metadataBase: new URL('https://www.suyashgupta.in'),
+  title: "Suyash Gupta - Senior Software Engineer",
+  description: "Portfolio of Suyash Gupta, a Senior Software Engineer with 6+ years of experience in React, Next.js, Node.js, and modern web technologies. Specialized in building high-performance web applications.",
+  keywords: "Suyash Gupta, Senior Software Engineer, React developer, Next.js developer, Node.js, Full Stack Developer, Times Network, portfolio",
+  authors: [{ name: "Suyash Gupta" }],
   openGraph: {
-    title: "Suyash Gupta - Portfolio",
-    description: "Explore the portfolio of Suyash Gupta, showcasing projects, experience, and contact information.",
-    url: "https://yourdomain.com",
+    title: "Suyash Gupta - Senior Software Engineer",
+    description: "Portfolio showcasing projects, experience, and technical expertise in modern web development.",
+    url: "https://www.suyashgupta.in",
+    siteName: "Suyash Gupta Portfolio",
     images: [
       {
         url: "/images/og-image.jpg",
@@ -24,12 +26,13 @@ export const metadata: Metadata = {
         alt: "Suyash Gupta Portfolio",
       },
     ],
+    locale: "en_US",
+    type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    site: "@yourtwitterhandle",
-    title: "Suyash Gupta - Portfolio",
-    description: "Explore the portfolio of Suyash Gupta, showcasing projects, experience, and contact information.",
+    title: "Suyash Gupta - Senior Software Engineer",
+    description: "Portfolio showcasing projects, experience, and technical expertise in modern web development.",
   },
 };
 
@@ -39,27 +42,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-        <Head>
-        <title>Suyash Gupta - Portfolio</title>
-        <meta name="description" content="Welcome to the portfolio of Suyash Gupta, a software engineer with expertise in React, Next.js, and more." />
-        <meta name="keywords" content="Suyash Gupta, software engineer, React developer, Next.js developer, portfolio" />
-        <meta name="author" content="Suyash Gupta" />
-        <meta property="og:title" content="Suyash Gupta - Portfolio" />
-        <meta property="og:description" content="Explore the portfolio of Suyash Gupta, showcasing projects, experience, and contact information." />
-        <meta property="og:image" content="/images/og-image.jpg" />
-        <meta property="og:url" content="https://www.suyashgupta.in" />
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:site" content="@yourtwitterhandle" />
-        <meta name="twitter:title" content="Suyash Gupta - Portfolio" />
-        <meta name="twitter:description" content="Explore the portfolio of Suyash Gupta, showcasing projects, experience, and contact information." />
-        <meta name="twitter:image" content="/images/twitter-image.jpg" />
-      </Head>
-      <body className={`${inter.className} container`}>
-        <Navbar />
+    <html lang="en" className="scroll-smooth">
+      <body className={inter.className}>
+        <ScrollProgress />
         {children}
         <Copyright />
-        </body>
+      </body>
     </html>
   );
 }
